@@ -1,28 +1,5 @@
 <template name="home">
     {{#each contents}}
-    <div class="ui feed">
-      <div class="event">
-        <div class="label">
-          <img src="/images/avatar/small/elliot.jpg">
-        </div>
-        <div class="content">
-          <div class="summary">
-            <a class="user">
-              {{author}}
-            </a>  {{title}}
-            <div class="date">
-             {{created}}
-            </div>
-          </div>
-          <div class="meta">
-            <a class="like">
-              <i class="like icon"></i>         {{permlink}}
-
-            </a>
-          </div>
-        </div>
-      </div>
-
-    </div>
+      {{> item}}
     {{/each}}
   </template>

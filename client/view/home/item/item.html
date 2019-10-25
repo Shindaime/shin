@@ -1,0 +1,31 @@
+<template name="item">
+    {{#if equals currentMenu 'home'}}
+        Home Content
+    {{/if}}
+    {{#if equals currentMenu 'faq'}}
+    FAQ Content
+    {{/if}}
+    <div class="ui feed">
+      <div class="event">
+        <div class="label">
+          <img src="/images/avatar/small/elliot.jpg">
+        </div>
+        <div class="content">
+          <div class="summary">
+            <a class="user" href="/{{author}}/{{permlink}}">
+              {{author}}
+            </a>  {{title}}
+            <div class="date">
+             {{created}}
+            </div>
+          </div>
+          <div class="meta">
+            <a class="like">
+              <i class="like icon"></i>        
+               {{permlink}}
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </template>

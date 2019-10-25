@@ -1,0 +1,10 @@
+<template name="article">
+    {{#with currentContent}}
+    <div>
+        {{author}} {{title}}
+    </div>
+    <div>
+        {{{markdownFormatter body}}}
+    </div>
+    {{/with}}
+</template>

@@ -1,3 +1,5 @@
+Content  = new Mongo.Collection(null)
+
 Contents = new Mongo.Collection(null)
 
 Contents.getCreatedContent = function (tag, limit, cb) {
@@ -21,4 +23,25 @@ Contents.getCreatedContent = function (tag, limit, cb) {
             return cb(null)
         }
     })
+}
+
+
+Content.getContent = function (author, permlink, cb) {
+        steem.api.getContent(author, permlink, function (error, result) {
+            if (!result)
+                return cb(true)
+            else {
+                if (result.json_metadata) {
+                    try {
+                        result.json_metadata = JSON.parse(result.json_metadata)
+                    } catch (error) {
+                        console.log(error)
+                        cb(error)
+                    }
+                    Content.remove({});
+                    Content.upsert({ _id: result._id }, result);
+                }
+            }
+            cb(null)
+        });
 }
