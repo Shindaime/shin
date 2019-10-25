@@ -1,0 +1,32 @@
+{
+  "name": "Shin",
+  "private": true,
+  "scripts": {
+    "start": "meteor run",
+    "test": "meteor test --once --driver-package meteortesting:mocha",
+    "test-app": "TEST_WATCH=1 meteor test --full-app --driver-package meteortesting:mocha",
+    "visualize": "meteor --production --extra-packages bundle-visualizer"
+  },
+  "dependencies": {
+    "@babel/runtime": "^7.6.3",
+    "bufferutil": "^4.0.1",
+    "meteor-node-stubs": "^0.4.1",
+    "postcss": "^6.0.22",
+    "postcss-load-config": "^1.2.0",
+    "save": "^2.4.0",
+    "steem": "^0.7.7",
+    "utf-8-validate": "^5.0.2"
+  },
+  "devDependencies": {
+    "autoprefixer": "^6.3.1"
+  },
+  "postcss": {
+    "plugins": {
+      "autoprefixer": {
+        "browsers": [
+          "last 2 versions"
+        ]
+      }
+    }
+  }
+}

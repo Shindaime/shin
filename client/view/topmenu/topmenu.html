@@ -1,0 +1,30 @@
+<template name="topmenu">
+  <div class="ui secondary  menu">
+    <a href="/" class="active item">
+      Menu
+    </a>
+    <a href="/faq" class="item">
+      FAQ
+    </a>
+    <a class="item">
+      Friends
+    </a>
+    {{mainuser.name}}
+    {{#if allusers}}
+    {{#each allusers}}
+    <div class="ui button red">{{name}}</div>
+    {{/each}}
+    {{/if}}
+    <div class="right menu">
+      <div class="item">
+        <div class="ui icon input">
+          <input type="text" placeholder="Search...">
+          <i class="search link icon"></i>
+        </div>
+      </div>
+      <a  id="menu" class="ui item">
+        Logout {{toAmount '54.52955'}}
+      </a>
+    </div>
+  </div>
+</template>

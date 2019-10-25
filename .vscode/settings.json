@@ -1,0 +1,8 @@
+{
+    "files.exclude": {
+        "**/.gitignore": true,
+        "**/.meteor": true,
+        "**/.vscode": true,
+        "**/node_modules": true
+    }
+}
