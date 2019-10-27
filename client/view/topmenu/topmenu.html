@@ -1,5 +1,37 @@
 <template name="topmenu">
+  <div class="ui primary menu">
+    <a href="/" class="active item">
+      Accueil
+    </a>
+    <a href="/faq" class="item">
+      Evenements
+    </a>
+    <a class="item">
+      Récurrences
+    </a>
+    <a class="item">
+      Contact
+    </a>
+
+    <div class="right menu">
+      <div class="item">
+        <div class="ui icon input">
+          <input id="search" type="text" placeholder="Chercher un steemian...">
+          <i class="search link icon"></i>
+        </div>
+      </div>
+
+      <a id="notification" class="item">
+        <i class="bell icon"></i>
+      </a>
+      <a id="menu" class="ui item">
+          <i class="bars icon"></i>
+        </a>
+  </div>
+</div>
+
   <div class="ui secondary  menu">
+
     <a href="/" class="active item">
       en vogue
     </a>
@@ -12,18 +44,5 @@
     <a class="item">
       promu
     </a>
-
-    <div class="right menu">
-      <div class="item">
-        <div class="ui icon input">
-          <input type="text" placeholder="Chercher un steemian...">
-          <i class="search link icon"></i>
-        </div>
-      </div>
-
-      <a id="menu" class="ui item"> 
-         Dashboard {{toAmount '54.52955'}} 
-      </a>
-    </div>
   </div>
 </template>

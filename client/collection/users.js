@@ -27,3 +27,4 @@ User.add = function (username, cb) {
        cb(null)
    });
 }
+

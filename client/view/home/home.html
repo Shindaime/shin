@@ -1,5 +1,48 @@
 <template name="home">
-    {{#each contents}}
-      {{> item}}
-    {{/each}}
-  </template>
+  <div class="ui grid">
+    <div class="ui equal width grid">
+      <div class="row">
+        <div class="four wide column">
+          <p>Catégory par tag</p>
+
+           
+             {{#each tagsCollection}}
+
+           
+          
+          <div>{{name}} ({{comments}})
+            
+          </div>
+        
+          {{/each}}
+        
+        </div>
+        <div class="eight equal column">
+          <p>Mon flux</p>
+
+          {{#each contentsCollection}}
+          
+          {{> item}}
+          {{/each}}
+        </div>
+        <div class="four wide column">
+          <p>Liens</p>
+          <div class="ui vertical menu">
+            <a class="item">
+              <h4 class="ui header">Liens</h4>
+              <p>Check out our new promotions</p>
+            </a>
+            <a class="item">
+              <h4 class="ui header">Coupons</h4>
+              <p>Check out our collection of coupons</p>
+            </a>
+            <a class="item">
+              <h4 class="ui header">Rebates</h4>
+              <p>Visit our rebate forum for information on claiming rebates</p>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</template>

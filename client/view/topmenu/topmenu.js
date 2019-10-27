@@ -12,6 +12,12 @@ Template.topmenu.events({
   }
 })
 
+Template.topmenu.events({
+  'click #notification':function(event){
+    $('.ui.modal').modal('show')
+    //FlowRouter.go('/faq')
+  }
+})
 
 Template.topmenu.helpers({
   toAmount:function(number){

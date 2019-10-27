@@ -1,5 +1,14 @@
 <template name="faq">
+  <div class="five wide column">
     {{#each contents}}
-      {{> item}}
+    {{tags}}
     {{/each}}
-  </template>
+  </div>
+  <div class="six wide column">
+    {{#each contents}}
+    {{> item}}
+    {{/each}}
+  </div>
+  <div class="five wide column">
+  </div>
+</template>
