@@ -43,3 +43,7 @@ Template.registerHelper('itemPic', function (body) {
    var src = regex.exec(body)[2];
    return src
 });
+
+Template.registerHelper('displayUpvote', function (share, rewards) {
+  return (share * rewards).toFixed(3);
+});

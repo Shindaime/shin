@@ -1,34 +1,36 @@
 <template name="item">
-    <div class="ui unstackable items">
+    <!-- <div class="ui unstackable items">
         <div class="item">
           <div class="ui small image">
             <img class="image" src="{{itemPic body}}">
           </div>
           <div class="content">
               <a class="user" href="/{{author}}/{{permlink}}"> {{title}}</a>
-             
+
               <div class="extra">
                   <a class="user" href="/{{author}}"> {{author}} </a>
                   {{author}}  {{timeFromNow created}}
-                  {{body_lenght}} 
+                  {{body_lenght}}
               </div>
-              
+
 
             <div class="meta">
-              
+
               {{permlink}}
+              {{active_votes.lenght}}
             </div>
             <div class="description">
               <p></p>
             </div>
-            <div class="ui label">
-                  
+            <div class="ui blue label">
+
                 {{category}}
             </div>
-            
-            <a class="ui label">
+
+
+               <a class="ui label">
                 <i class="heart icon"></i>
-                Mail
+
               </a>
               <a class="ui label">
                   <i class="comment icon"></i>
@@ -42,15 +44,45 @@
                     </a>
           </div>
         </div>
-      
-      </div>
-  
+
+      </div> -->
+
+
+      <div class="ui grid"></div>
+      <div class="ui card">
+          <div class="content">
+            <div class="right floated meta">{{timeFromNow created}}</div>
+            <img class="ui avatar image" src="https://steemitimages.com/u/{{author}}/avatar/small"> {{author}}
+          </div>
+          <div class="cardpic">
+            <img src="{{itemPic body}}">
+          </div>
+          <div class="content">
+            <span class="right floated">
+              <i class="heart outline like icon"></i>
+              17 likessssssss
+            </span>
+            <i class="comment icon"></i>
+            3 comments
+          </div>
+          <div class="extra content">
+            <div class="ui large transparent left icon input">
+              <i class="heart outline icon"></i>
+              <input type="text" placeholder="Add Comment...">
+            </div>
+          </div>
+        </div>
+
+
+
+
+
     </template>
 
 
 
 
-    <!-- <div class="ui small items"> 
+    <!-- <div class="ui small items">
         <h3 class="ui header">
             {{title}}
           </h3>
@@ -61,29 +93,19 @@
         </div>
         <div class="content">
           <div class="summary">
-            <a class="user" href="/{{author}}/{{permlink}}"> 
+            <a class="user" href="/{{author}}/{{permlink}}">
               {{author}}
-            </a>  
+            </a>
             <div class="date">
              {{timeFromNow created}}
             </div>
           </div>
           <div class="meta">
             <a class="like">
-              <i class="like icon"></i>       
+              <i class="like icon"></i>
               {{permlink}}
             </a>
           </div>
         </div>
       </div>
     </div>  -->
-
- 
-
-
-
-
-
-       
-
-  

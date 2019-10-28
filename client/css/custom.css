@@ -5,9 +5,18 @@
     overflow: hidden;
 }; */
 
-.ui.unstackable.items .item .ui.small.image .image{
-    height: 100px!important;
+.ui.card .cardpic {
+    height: 200px!important;
+    padding: 0em;
     background-size: 100%,100%!important;
     background:grey!important;
-    
-};
+    overflow: hidden; 
+    };
+
+    .ui.card
+    {
+        width: 100%;
+
+        };
+   
+
