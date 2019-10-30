@@ -1,22 +1,13 @@
-/* .ui.unstackable.items .item .ui.small.image{
-    height: 100px!important;
-    padding: 1em;
-    background-size: 100%,100%!important;
-    overflow: hidden;
-}; */
-
 .ui.card .cardpic {
-    height: 200px!important;
+    height: 300px!important;
     padding: 0em;
-    background-size: 100%,100%!important;
+    background-size: contain!important;
     background:grey!important;
     overflow: hidden; 
+    
     };
 
-    .ui.card
-    {
-        width: 100%;
-
-        };
+ 
+      
    
 

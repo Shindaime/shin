@@ -10,7 +10,7 @@ BlazeLayout.setRoot('body');
 
 Meteor.startup(function () {
 
-  Contents.getCreatedContent('fr',50,function(error){
+  Contents.getTrendingContent('steemit',20,function(error){
     if(error)
     console.log(error);
   })

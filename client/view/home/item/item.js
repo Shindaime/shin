@@ -23,4 +23,16 @@ Template.profile.rendered = function () {
           $('.menu.profile .item').tab('change tab', 'first')
       }
     }
-  }
+
+    $('.left.floated.upvote')
+    .popup({
+      popup: '.upvote.popup'
+     
+    })
+  ;
+}
+
+
+
+    
+
